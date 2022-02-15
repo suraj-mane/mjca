@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.heading {
+  font-size: 3rem;
+  margin-left: 5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
