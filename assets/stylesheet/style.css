@@ -60,6 +60,16 @@ table {
   grid-row: auto;
 }
 
+.container-2, .pages-link .pages, .footer-box1, .footer-box2, .purpose-boxs, .to .to-boxs {
+  display: -ms-grid;
+  display: grid;
+  max-width: 1750px;
+  margin: 0 auto;
+  gap: 20px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,7 +92,7 @@ a {
   color: #fff;
 }
 
-.heading, .feature h2, .thinking h4, .client h4, .press h4, .more h3 {
+.heading, .feature h2, .thinking h4, .client h4, .press h4, .more h3, .purpose h2, .people h2, .client-about h2 {
   font-size: 3rem;
   margin-left: 5rem;
   color: #fff;
@@ -306,6 +316,7 @@ body {
 }
 
 .esg .esg-boxs .esg-info {
+  margin: 9rem 5rem;
   color: #fff;
 }
 
@@ -330,6 +341,7 @@ body {
 .esg .esg-boxs .esg-info button {
   font-size: 1.2rem;
   color: #FFE701;
+  padding: 1rem;
   background-color: #2F2E39;
   border: 2px solid #fff;
 }
@@ -359,11 +371,11 @@ body {
 
 .client .client-boxs h5 a {
   color: #1B1A25;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .client .client-boxs h5 a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #2F2E39;
 }
 
 .client button {
@@ -372,6 +384,11 @@ body {
   background-color: #fff;
   border: 1px solid #2F2E39;
   font-size: 1.2rem;
+}
+
+.client button:hover {
+  background-color: #1B1A25;
+  color: #fff;
 }
 
 /* services */
@@ -568,16 +585,6 @@ body {
   margin: 2rem 0;
 }
 
-.pages-link .pages {
-  display: -ms-grid;
-  display: grid;
-  max-width: 1750px;
-  margin: 0 auto;
-  gap: 20px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
 .pages-link .page-boxs-1 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -630,16 +637,6 @@ body {
   padding: 2rem 0;
 }
 
-.footer-box1 {
-  display: -ms-grid;
-  display: grid;
-  max-width: 1750px;
-  margin: 0 auto;
-  gap: 20px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
 .footer-box1 h3 {
   font-size: 2rem;
 }
@@ -661,13 +658,6 @@ body {
 }
 
 .footer-box2 {
-  display: -ms-grid;
-  display: grid;
-  max-width: 1750px;
-  margin: 0 auto;
-  gap: 20px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
   padding-top: 2rem;
 }
 
@@ -685,5 +675,150 @@ body {
 .footer-box2 i:hover {
   background-color: #2F2E39;
   color: #fff;
+}
+
+/* About pages */
+.purpose {
+  background-color: #2F2E39;
+  padding: 5rem 0;
+}
+
+.purpose h2 {
+  color: #FFE701;
+}
+
+.purpose-boxs {
+  color: #fff;
+}
+
+.purpose-boxs .p-boxs-1 p {
+  font-size: 1.8rem;
+}
+
+.purpose-boxs .p-boxs-2 p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.purpose-boxs .p-boxs-2 a {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.purpose-boxs .p-boxs-2 a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* People*/
+.people {
+  padding: 5rem 0;
+  background-color: #2F2E39;
+}
+
+.people h2 {
+  color: #FFE701;
+}
+
+/* client */
+.client-about {
+  background-color: #2F2E39;
+  color: #fff;
+}
+
+.client-about h2 {
+  text-align: left;
+  color: #FFE701;
+}
+
+.client-about .about-client-boxs h5 {
+  margin: 0.5rem 0;
+}
+
+.client-about .about-client-boxs h5 a {
+  color: #fff;
+}
+
+.client-about .about-client-boxs h5 a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.client-about button {
+  background-color: #2F2E39;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.client-about button:hover {
+  background-color: #fff;
+  color: #2F2E39;
+}
+
+/* To */
+.to {
+  background-color: #2F2E39;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.to .to-boxs img {
+  width: 100%;
+}
+
+.to .to-boxs .to-boxs-2 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 5rem;
+}
+
+.to .to-boxs .to-boxs-2 h5 {
+  font-size: 2rem;
+}
+
+.to .to-boxs .to-boxs-2 p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.to .to-boxs .to-boxs-2 button {
+  width: 290px;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  background-color: #2F2E39;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.to .to-boxs .to-boxs-2 button:hover {
+  background-color: #fff;
+  color: #2F2E39;
+}
+
+/* service */
+.people-boxs {
+  padding: 2rem 0;
+}
+
+.people-boxs h3 {
+  font-size: 1.8rem;
+  color: #FFE701;
+}
+
+.people-boxs p {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.people-boxs a {
+  font-weight: 600;
+}
+
+.people-boxs a:hover {
+  border-bottom: 2px solid #fff;
 }
 /*# sourceMappingURL=style.css.map */

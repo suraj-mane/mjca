@@ -7,3 +7,10 @@
   grid-template-columns: repeat(3,1fr);
   grid-row: auto;
 }
+.container-2 {
+  display: grid;
+  max-width: 1750px;
+  margin: 0 auto;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
